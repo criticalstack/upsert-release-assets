@@ -1,0 +1,28 @@
+{
+  "name": "upsert-release-assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/criticalstack/upsert-release-assets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/criticalstack/upsert-release-assets/issues"
+  },
+  "homepage": "https://github.com/criticalstack/upsert-release-assets#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^2.2.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.4"
+  }
+}

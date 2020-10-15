@@ -1,0 +1,19 @@
+name: 'Upsert release assets'
+description: 'Create/update GitHub releases/assets'
+inputs:
+  release_name:
+    description: 'The name of the release. For example, `Release v1.0.1`'
+    required: true
+  assets_directory:
+    description: 'The directory containing release assets'
+    required: true
+    default: 'dist'
+  owner:
+    description: 'Owner of the repository if it is not the current one'
+    required: false
+  repo:
+    description: 'Repository on which to release.  Used only if you want to create the release on another repo'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
